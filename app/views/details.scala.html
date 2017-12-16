@@ -1,0 +1,39 @@
+@(id: Long, apartment: Apartment)
+
+@****************************************
+* Helper generating navigation links    *
+****************************************@
+@home() = @{
+    // Generate the link
+    routes.HomeController.index()
+
+}
+
+@main {
+    <h1>Apartment Details</h1>
+
+    <table class="apartments zebra-striped">
+        <tr>
+            <td>Apartment Name</td>
+            <td>@apartment.getName</td>
+        </tr>
+        <tr>
+            <td>Apartment Type</td>
+            <td>@apartment.getApartmentType.getName</td>
+        </tr>
+        <tr>
+            <td>Latitude</td>
+            <td>@apartment.getLatitude</td>
+        </tr>
+        <tr>
+            <td>Longitude</td>
+            <td>@apartment.getLongitude</td>
+        </tr>
+        <tr>
+            <td>Facilities</td>
+            <td>@apartment.getFacilitiesToString</td>
+        </tr>
+    </table>
+
+    <a href="@routes.HomeController.index()" name="home">Home</a>
+}

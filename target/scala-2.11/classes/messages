@@ -1,0 +1,3 @@
+# Messages
+
+apartments.list.title={0,choice,0#No apartments|1#One apartment|1<{0,number,integer} apartments} found

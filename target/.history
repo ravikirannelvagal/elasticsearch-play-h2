@@ -1,0 +1,29 @@
+run
+play compile
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+clean
+compile
+run
+test-only 
+[success] Total time: 14098 s, completed 16 Dec, 2017 8:04:01 PM
+test-only 
+[success] Total time: 14098 s, completed 16 Dec, 2017 8:04:01 PM
+test-only com.holidu.HomeControllerFunctionalTest
+test-only com.holidu.HomeControllerIntegrationTest
+test-only 
+testOnly com.holidu.HomeControllerFunctionalTest
+test
+run
+compile
+run
+test
+run
+compile
+run

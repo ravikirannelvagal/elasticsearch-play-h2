@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET         /                        controllers.HomeController.index()
+
+GET         /apartments              controllers.HomeController.list(fn ?="", ff ?="", ft ?="")
+GET         /apartments/:id          controllers.HomeController.findById(id:Long)
+
+GET         /sample/index/:id        controllers.SampleController.index(id:Long)
+GET         /sample/search           controllers.SampleController.search()
+GET         /sample/:id              controllers.SampleController.getById(id:Long)
+POST        /sample                  controllers.SampleController.post()
+
+# Add more routes as you require below
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
